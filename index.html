@@ -10,44 +10,84 @@
 
 <body>
 
-  <header class="hero">
-    <div class="hero-inner">
-      <h1>Fotografie</h1>
-      <p class="subtitle">Schlichte Bilder. Klare Momente.</p>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="nav">
+      <div class="logo">Fotografie</div>
+      <nav class="menu">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">Über mich</a>
+        <a href="#contact" class="btn small">Kontakt</a>
+      </nav>
     </div>
   </header>
 
-  <main class="content">
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Schlichte Fotografie</h1>
+    <p>Ruhige Bilder · Natürliches Licht · Zeitloser Stil</p>
+    <div class="hero-buttons">
+      <a href="#portfolio" class="btn primary">Portfolio ansehen</a>
+      <a href="#contact" class="btn">Anfrage senden</a>
+    </div>
+  </section>
 
-    <section class="section">
-      <h2>Portfolio</h2>
-      <p class="text">
-        Eine kleine Auswahl ruhiger, zeitloser Arbeiten aus Portrait und Editorial.
-      </p>
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+    <p class="section-text">
+      Eine reduzierte Auswahl – echte Bilder kannst du später einfach ersetzen.
+    </p>
 
-      <div class="portfolio">
-        <div class="placeholder">Bild</div>
-        <div class="placeholder">Bild</div>
-        <div class="placeholder">Bild</div>
+    <div class="grid">
+      <div class="card">
+        <div class="image"></div>
+        <span>Portrait</span>
       </div>
-    </section>
+      <div class="card">
+        <div class="image"></div>
+        <span>Wedding</span>
+      </div>
+      <div class="card">
+        <div class="image"></div>
+        <span>Editorial</span>
+      </div>
+    </div>
+  </section>
 
-    <section class="section light">
-      <h2>Über mich</h2>
-      <p class="text">
-        Ich fotografiere Menschen mit Fokus auf Natürlichkeit, Licht und reduzierte Bildsprache.
-      </p>
-    </section>
+  <!-- About -->
+  <section class="section light" id="about">
+    <h2>Über mich</h2>
+    <p class="section-text">
+      Ich fotografiere Menschen mit Fokus auf Natürlichkeit, Klarheit und ruhige Bildsprache.
+    </p>
 
-    <section class="section">
-      <h2>Kontakt</h2>
-      <p class="text">
-        hello@example.com
-      </p>
-    </section>
+    <div class="features">
+      <div class="feature">
+        <h3>Natürlich</h3>
+        <p>Kein Studio-Zwang, echtes Licht, echte Momente.</p>
+      </div>
+      <div class="feature">
+        <h3>Entspannt</h3>
+        <p>Klare Anleitung, kein Druck, kein Posing-Stress.</p>
+      </div>
+      <div class="feature">
+        <h3>Zeitlos</h3>
+        <p>Bilder, die auch in Jahren noch passen.</p>
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <!-- Kontakt -->
+  <section class="section" id="contact">
+    <h2>Kontakt</h2>
+    <div class="contact-box">
+      <p>hello@example.com</p>
+      <a class="btn primary" href="#">E-Mail schreiben</a>
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <p>© <span id="year"></span> Fotografie</p>
   </footer>
