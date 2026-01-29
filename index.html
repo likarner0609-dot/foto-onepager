@@ -1,98 +1,60 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fotografie – Onepager Test</title>
-  <meta name="description" content="Kleiner Fotografie-Onepager zum Testen auf GitHub Pages." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <title>Fotografie · Onepager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cleanes Onepager-Design für Fotografie.">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="hero">
-    <nav class="nav">
-      <a class="brand" href="#top">FotoTest</a>
-      <div class="links">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
-    </nav>
 
-    <div class="hero-inner" id="top">
-      <p class="badge">Fotografie · Onepager</p>
-      <h1>Minimal. Ruhig. Zeitlos.</h1>
-      <p class="lead">
-        Eine kleine Testseite für GitHub Pages – mit HTML + CSS.
-      </p>
-      <div class="cta">
-        <a class="btn primary" href="#portfolio">Portfolio ansehen</a>
-        <a class="btn" href="#kontakt">Kontakt</a>
-      </div>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Fotografie</h1>
+      <p class="subtitle">Schlichte Bilder. Klare Momente.</p>
     </div>
   </header>
 
-  <main class="container">
-    <section id="portfolio" class="section">
-      <div class="section-head">
-        <h2>Portfolio</h2>
-        <p>Platzhalter-Kacheln (später durch echte Bilder ersetzen).</p>
-      </div>
+  <main class="content">
 
-      <div class="grid">
-        <article class="card">
-          <div class="thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <strong>Portrait</strong><span>Natürliches Licht</span>
-          </div>
-        </article>
+    <section class="section">
+      <h2>Portfolio</h2>
+      <p class="text">
+        Eine kleine Auswahl ruhiger, zeitloser Arbeiten aus Portrait und Editorial.
+      </p>
 
-        <article class="card">
-          <div class="thumb alt" aria-hidden="true"></div>
-          <div class="card-body">
-            <strong>Wedding</strong><span>Storytelling</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="thumb" aria-hidden="true"></div>
-          <div class="card-body">
-            <strong>Branding</strong><span>Clean & modern</span>
-          </div>
-        </article>
+      <div class="portfolio">
+        <div class="placeholder">Bild</div>
+        <div class="placeholder">Bild</div>
+        <div class="placeholder">Bild</div>
       </div>
     </section>
 
-    <section id="kontakt" class="section">
-      <div class="section-head">
-        <h2>Kontakt</h2>
-        <p>Nur Testinhalt (kein echtes Formular-Backend).</p>
-      </div>
-
-      <div class="contact">
-        <div class="contact-card">
-          <p><strong>E-Mail:</strong> hello@example.com</p>
-          <p><strong>Instagram:</strong> @deinhandle</p>
-          <p class="small">Tipp: Daten einfach im HTML austauschen.</p>
-        </div>
-
-        <div class="contact-card">
-          <p class="small">
-            Wenn du später ein echtes Formular brauchst, nutze z. B. Netlify Forms
-            oder ein WordPress-Formularplugin (bei WordPress.org / Upgrade).
-          </p>
-          <a class="btn primary" href="#top">Nach oben</a>
-        </div>
-      </div>
+    <section class="section light">
+      <h2>Über mich</h2>
+      <p class="text">
+        Ich fotografiere Menschen mit Fokus auf Natürlichkeit, Licht und reduzierte Bildsprache.
+      </p>
     </section>
+
+    <section class="section">
+      <h2>Kontakt</h2>
+      <p class="text">
+        hello@example.com
+      </p>
+    </section>
+
   </main>
 
   <footer class="footer">
-    <span>© <span id="year"></span> FotoTest</span>
-    <a href="#top">Top</a>
+    <p>© <span id="year"></span> Fotografie</p>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
